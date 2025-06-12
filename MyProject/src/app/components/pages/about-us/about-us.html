@@ -1,1 +1,25 @@
-<p>about-us works!</p>
+<main>
+    <h1>Fundamentos</h1>
+    <section>
+        <h2>prueba</h2>
+        <p> {{framework}}lomrem</p>
+        <p> Greet: {{Greet}} </p>
+    </section>
+    <div>
+    <h3>condicionales</h3>
+    @if(isLoggedIn){
+        <p>bienvenido, esta logueado</p>
+    }
+    @if(isLoggedIn){
+        <p>Hola </p>
+    }@else {
+        <p>no estas logueado</p>
+    }
+    </div>
+    <div>
+    <h3>loop</h3>
+    @for(dev of devs; track dev.id ){
+        <p> {{dev.name}}</p>
+    }
+    </div>
+</main>
